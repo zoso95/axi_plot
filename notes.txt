@@ -1,0 +1,51 @@
+operations
+-T report time
+--preview, -v (offline)
+--rendering, -g render motion w/ preview
+--output_file, -o
+--config, -f
+--model, -L (should be in config)
+
+
+estimate plot time
+-------------------------------
+axicli file.svg --report_time
+axicli file.svg -vTC
+
+Rendering
+------------
+axicli file.svg -Tvg 1 -o outputfile.svg
+0 - Do not render previews
+1 - Render pen-down movement only
+2 - Render pen-up movement only
+3 - Render all movement, both pen-up and pen-down [DEFAULT]
+
+optimizing
+------------
+axicli file.svg -m reorder --reordering 2 -o out.svg
+
+resume?
+------------------
+axicli file.svg -o temp.svg
+axicli temp.svg --mode res_home -o temp2.svg
+axicli temp.svg --mode res_plot -o temp2.svg
+
+
+copy to location!
+
+
+"""
+File
+give me total time
+let me toggle pens
+resume
+
+Layers
+give me total time/layer
+
+select layer
+let me toggle pens
+resume
+
+
+"""

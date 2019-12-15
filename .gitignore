@@ -1,0 +1,7 @@
+Axidraw_API_v253r4/
+Axidraw_API_v253r4/*
+AxiDraw_API.zip
+.DS_store
+axi_plot.egg-info/
+tmp/
+*/__pycache__
